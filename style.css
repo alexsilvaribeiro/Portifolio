@@ -22,6 +22,7 @@
     
         .content {
           display: flex;
+          flex-direction: row-reverse;
           flex: 1;
         }
     
@@ -36,4 +37,30 @@
           background-color: #fff;
           padding: 20px;
         }
-     
+
+        .menu-lateral{
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                width: 150px;            
+                }    
+            ul li {
+                position: relative;
+                }    
+            li ul {
+                position: absolute;
+                left: 149px;
+                top: 0;
+                display: none;
+                }
+            ul li a {    
+                display: block;
+                text-decoration: none;
+                color: #E2144A;
+                background: #fff;
+                padding: 5px;
+                border: 1px solid #ccc;
+                }    
+            li:hover ul { display: block; }
+        }
